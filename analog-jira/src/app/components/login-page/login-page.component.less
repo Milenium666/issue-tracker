@@ -1,0 +1,28 @@
+@import '../../../styles.less';
+
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.login-card {
+  background: @color-bg;
+  border: 1px solid @color-border;
+  border-radius: @radius;
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+
+  &__title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  &__desc {
+    margin-bottom: 1.5rem;
+    color: @color-secondary;
+  }
+}

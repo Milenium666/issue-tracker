@@ -1,0 +1,16 @@
+<div class="user-list">
+  <h2 class="user-list__title">Пользователи</h2>
+
+  <div class="user-list__grid">
+    @for (user of users; track user.id) {
+    <div class="user-card">
+      <h5 class="user-card__title">{{ user.fullName }}</h5>
+      <p class="user-card__id">ID: {{ user.id }}</p>
+      <p class="user-card__role">
+        <span class="badge badge--role">{{ user.role }}</span>
+      </p>
+      <a [routerLink]="['/admin/users', user.id]" class="btn btn--primary">Детали</a>
+    </div>
+    }
+  </div>
+</div>

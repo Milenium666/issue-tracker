@@ -1,0 +1,55 @@
+@import '../../../styles.less';
+
+.project-detail {
+  &__card {
+    background: @color-bg;
+    border: 1px solid @color-border;
+    border-radius: @radius;
+    padding: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  &__id {
+    margin-bottom: 1rem;
+    color: @color-secondary;
+  }
+
+  &__subtitle {
+    margin: 1rem 0;
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+}
+
+.issue-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.issue-card {
+  border: 1px solid @color-border;
+  border-radius: @radius;
+  padding: 1rem;
+  background: @color-bg;
+  transition: box-shadow @transition;
+
+  &:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  }
+
+  &__title {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  &__id {
+    font-size: 0.85rem;
+    color: @color-secondary;
+  }
+}

@@ -1,0 +1,23 @@
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+.login-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+.login-card__title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.login-card__desc {
+  margin-bottom: 1.5rem;
+  color: #6b7280;
+}

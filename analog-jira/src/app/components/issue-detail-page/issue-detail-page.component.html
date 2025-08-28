@@ -1,0 +1,14 @@
+<div class="issue-detail">
+  <button class="btn btn--secondary" routerLink="/projects">&larr; Назад к проектам</button>
+
+  @if (issue && project) {
+    <div class="issue-detail__card">
+      <h3 class="issue-detail__title">{{ issue.name }}</h3>
+      <p><strong>Проект:</strong> {{ project.name }} ({{ project.id }})</p>
+      <p><strong>ID задачи:</strong> {{ issue.id }}</p>
+      <p><strong>Ключ:</strong> {{ project.id }}-{{ issue.id }}</p>
+    </div>
+  } @else {
+    <p class="text-muted">Задача не найдена</p>
+  }
+</div>

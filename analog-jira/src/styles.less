@@ -1,0 +1,52 @@
+@color-primary: #2563eb;
+@color-primary-hover: #1d4ed8;
+@color-secondary: #6b7280;
+@color-bg: #ffffff;
+@color-border: #e5e7eb;
+
+@radius: 12px;
+@transition: 0.2s ease;
+
+
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  border-radius: @radius;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  transition: background @transition, border-color @transition;
+
+  &--primary {
+    background: @color-primary;
+    border: 1px solid @color-primary;
+    color: #fff;
+
+    &:hover {
+      background: @color-primary-hover;
+      border-color: @color-primary-hover;
+    }
+  }
+
+  &--secondary {
+    background: @color-secondary;
+    border: 1px solid @color-secondary;
+    color: #fff;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+
+  &--outline {
+    background: transparent;
+    border: 1px solid @color-primary;
+    color: @color-primary;
+
+    &:hover {
+      background: @color-primary;
+      color: #fff;
+    }
+  }
+}

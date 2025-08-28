@@ -1,0 +1,17 @@
+.not-found {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+.not-found__code {
+  font-size: 5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.not-found__title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.not-found__desc {
+  margin-bottom: 2rem;
+  color: #6b7280;
+}

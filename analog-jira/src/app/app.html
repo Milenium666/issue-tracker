@@ -1,0 +1,26 @@
+<nav class="app-navbar">
+  <div class="app-navbar__container">
+    <a class="app-navbar__brand" routerLink="/">MiniJira</a>
+
+    <ul class="app-navbar__menu">
+      <li class="app-navbar__item">
+        <a routerLink="/projects" routerLinkActive="app-navbar__link--active" class="app-navbar__link">
+          Проекты
+        </a>
+      </li>
+      <li class="app-navbar__item">
+        <a routerLink="/admin/users" routerLinkActive="app-navbar__link--active" class="app-navbar__link">
+          Админка
+        </a>
+      </li>
+    </ul>
+
+    <div class="app-navbar__actions">
+      <a routerLink="/login" class="app-navbar__btn">Войти</a>
+    </div>
+  </div>
+</nav>
+
+<main class="app-main">
+  <router-outlet></router-outlet>
+</main>

@@ -1,0 +1,16 @@
+<div class="project-detail">
+  <button class="btn btn--secondary" routerLink="/projects">
+    &larr; Назад к проектам
+  </button>
+  @if (project) {
+  <div class="project-detail__card">
+    <h3 class="project-detail__title">{{ project.name }}</h3>
+    <p class="project-detail__id"><strong>ID:</strong> {{ project.id }}</p>
+    <div class="issue-list">
+      <a [routerLink]="['/projects', project.id, 'issues']" class="btn btn--outline">
+        Перейти к задачам
+      </a>
+    </div>
+  </div>
+  }
+</div>

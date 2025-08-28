@@ -1,0 +1,19 @@
+<div class="issue-list">
+  <button class="btn btn--secondary" [routerLink]="['/projects', projectId]">
+    &larr; Назад к проекту
+  </button>
+  <h2 class="issue-list__title">Задачи проекта {{ projectId }}</h2>
+  <div class="issue-list__grid">
+    @for (issue of issues; track issue.id) {
+    <div class="issue-card">
+      <div class="issue-card__body">
+        <h5 class="issue-card__title">{{ issue.name }}</h5>
+        <p class="issue-card__id">ID: {{ issue.id }}</p>
+        <a [routerLink]="['/browse', projectId + '-' + issue.id]" class="btn btn--primary">
+          Просмотреть
+        </a>
+      </div>
+    </div>
+    }
+  </div>
+</div>

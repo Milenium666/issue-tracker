@@ -1,0 +1,12 @@
+<div class="user-detail">
+  <button class="btn btn--secondary" [routerLink]="['/admin/users']">
+    &larr; Назад к списку
+  </button>
+  @if (user) {
+  <div class="user-detail__card">
+    <h3 class="user-detail__title">{{ user.fullName }}</h3>
+    <p><strong>ID:</strong> {{ user.id }}</p>
+    <p><strong>Роль:</strong> <span class="badge badge--role">{{ user.role }}</span></p>
+  </div>
+  }
+</div>

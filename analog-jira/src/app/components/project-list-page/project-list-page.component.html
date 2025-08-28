@@ -1,0 +1,16 @@
+<div class="project-list">
+  <h2 class="project-list__title">Проекты</h2>
+  <div class="project-list__grid">
+    @for (project of projects; track project.id) {
+    <div class="project-card">
+      <div class="project-card__body">
+        <h5 class="project-card__title">{{ project.name }}</h5>
+        <p class="project-card__id">ID: {{ project.id }}</p>
+        <a [routerLink]="['/projects', project.id]" class="btn btn--primary">
+          Детали
+        </a>
+      </div>
+    </div>
+    }
+  </div>
+</div>
