@@ -1,0 +1,5 @@
+{
+  "buildCommand": "ng build --configuration=production",
+  "outputDirectory": "dist/analog-jira",
+  "framework": null
+}
